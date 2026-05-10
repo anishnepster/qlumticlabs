@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QlumticLabs</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="ee.css" />
+</head>
+
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
+    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="heading-font text-3xl font-semibold tracking-tighter">
+          QlumticLabs
+        </span>
+      </div>
+
+      <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+        <a href="#" class="nav-link text-gray-300 hover:text-white">Product</a>
+
+        <div class="dropdown">
+          <a href="#" class="nav-link text-gray-300 hover:text-white flex items-center gap-1">
+            Our Services
+            <i class="fas fa-chevron-down text-xs mt-0.5"></i>
+          </a>
+
+          <!-- <div class="dropdown-content">
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">AI Solutions</a>
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">Cloud Infrastructure</a>
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">Custom Development</a>
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">Consulting</a>
+          </div> -->
+        </div>
+
+        <div class="dropdown">
+          <a href="#" class="nav-link text-gray-300 hover:text-white flex items-center gap-1">
+            Projects
+            <i class="fas fa-chevron-down text-xs mt-0.5"></i>
+          </a>
+
+          <!-- <div class="dropdown-content">
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">Featured Work</a>
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">Case Studies</a>
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">Client Success</a>
+          </div> -->
+        </div>
+
+        <div class="dropdown">
+          <a href="#" class="nav-link text-gray-300 hover:text-white flex items-center gap-1">
+            Our Team
+            <i class="fas fa-chevron-down text-xs mt-0.5"></i>
+          </a>
+
+          <!-- <div class="dropdown-content">
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">Leadership</a>
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">Engineering</a>
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">Design</a>
+            <a href="#" class="block px-6 py-3 hover:bg-white/10 text-sm">Join Us</a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button
+          onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+          class="px-6 py-2.5 text-sm font-semibold rounded-2xl border border-white/20 hover:border-white/40 transition-all"
+        >
+          Contact
+        </button>
+
+        <button
+          onclick="document.getElementById('demo').scrollIntoView({ behavior: 'smooth' })"
+          class="px-6 py-2.5 bg-white text-black rounded-2xl text-sm font-semibold hover:bg-blue-100 transition-all flex items-center gap-2"
+        >
+          <span>SignUp</span>
+          <i class="fas fa-arrow-right text-xs"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+<!-- HERO -->
+<section class="hero-bg min-h-screen flex items-center justify-center relative">
+  <canvas id="bg-canvas" class="absolute inset-0"></canvas>
+  <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/60 via-zinc-950/30 to-zinc-950"></div>
+
+  <div class="content text-center max-w-4xl px-6">
+    
+    <h1 class="heading-font text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6">
+      The future is <span class="gradient-text">beautiful</span>
+    </h1>
+
+    <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+      Modern infrastructure for ambitious teams. 
+      Beautiful interfaces, powerful AI, and lightning performance.
+    </p>
+
+  </div>
+
+  <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-xs tracking-widest text-gray-500">
+    <div class="w-px h-12 bg-gradient-to-b from-transparent via-gray-400 to-transparent"></div>
+    SCROLL
+  </div>
+</section>
+
+  <footer class="bg-black py-20 border-t border-white/10">
+    <div class="max-w-screen-2xl mx-auto px-8 text-center">
+      <div class="flex items-center justify-center gap-3 mb-8">
+        <span class="heading-font text-3xl font-semibold tracking-tighter">
+          QlumticLabs
+        </span>
+      </div>
+
+      <p class="text-gray-500">
+        © 2026 QlumticLabs. Made with love for the future.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
