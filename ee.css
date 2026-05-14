@@ -32,7 +32,7 @@ canvas#bg-canvas {
 }
 
 .glass {
-  background: rgba(10, 10, 10, 0.25); /* darker, softer */
+  background: rgba(10, 10, 10, 0.25); 
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: none; 
@@ -52,7 +52,7 @@ canvas#bg-canvas {
   color: rgb(147 197 253);
 }
 
-/* dropdown */
+
 .dropdown {
   position: relative;
 }
